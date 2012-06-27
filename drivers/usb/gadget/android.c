@@ -553,7 +553,6 @@ static int mass_storage_function_init(struct android_usb_function *f,
 	config->fsg.nluns = 2;
     for (i = 0; i < config->fsg.nluns; i++) {
         config->fsg.luns[i].removable = 1;
-        config->fsg.luns[i].nofua = 1;
     }
     #else
     	config->fsg.nluns = 1;
